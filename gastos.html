@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="gastos.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="losTitulos">Presupuesto</h1>
+        <div class="row fondoPresupuesto">
+            <div class="col-md-6">
+                <h2 class="losTitulos">Presupuesto Total</h2>
+                <input type="text" id="txtPresupuesto" placeholder="Ingrese el presupuesto">
+                <button id="btnCalcular" class="btn btn-primary">Calcular</button>
+            </div>
+            <div class="col-md-6">
+                <h2 class="losTitulos">Gasto Total</h2>
+                <p id="parrafoPresupuesto" class="losTitulos"></p>
+                <p id="parrafoGasto" class="losTitulos"></p>
+                <p id="parrafoSaldo" class="losTitulos"></p>
+            </div>
+        </div>
+        <div class="row fondoGasto">
+            <div class="col-md-6">
+                <h2 class="losTitulos">Añadir Gasto</h2>
+                <input type="text" id="txtNombreGasto" placeholder="Nombre del gasto">
+                <input type="text" id="txtCantidadGasto" placeholder="Cantidad del gasto">
+                <button id="btnAnadirGasto" class="btn btn-primary">Añadir</button>
+            </div>
+            <div class="col-md-6">
+                <h2 class="losTitulos">Lista de Gastos</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="losTitulos">Nombre</h4>
+                        <p id="parrafoNombreGasto" class="losTitulos"></p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="losTitulos">Valor</h4>
+                        <p id="parrafoValor" class="losTitulos"></p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="losTitulos">Acción</h4>
+                        <p id="parrafoAccion" class="losTitulos"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="gastos.js"></script>
+</body>
+</html>
